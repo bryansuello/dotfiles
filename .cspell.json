@@ -1,0 +1,46 @@
+{
+  // Version of the setting file.  Always 0.2
+  "version": "0.2",
+  // language - current active spelling language
+  "language": "en",
+  "ignorePaths": [
+    "node_modules/**",
+    "**.lua",
+    "**/{*,.*}/**/*.md"
+  ],
+  // words - list of words to be always considered correct
+  "words": [
+    "bryansuello",
+    "suello",
+    "mkdirp",
+    "tsmerge",
+    "githubusercontent",
+    "streetsidesoftware",
+    "vsmarketplacebadge",
+    "visualstudio",
+    //yours
+    "builtins",
+    "stylua",
+    "lspconfig",
+    "keymap",
+    "noremap",
+    "augroup",
+    "nvim",
+    "autocmd",
+    "neovim",
+    "treesitter",
+    "termcolors",
+    "afile",
+    "packadd",
+  ],
+  // flagWords - list of words to be always considered incorrect
+  // This is useful for offensive words and common spelling errors.
+  // For example "hte" should be "the"
+  "flagWords": [
+    "hte"
+  ],
+  "diagnosticLevel": "information",
+}
+//   "bin" - to ignore any directory / file called bin.
+//   "translations/**" - to ignore all files under the translations directory.
+//   "packages/*/dist" - to ignore the dist directory in each package.
