@@ -10,28 +10,34 @@
   ],
   // words - list of words to be always considered correct
   "words": [
-    "bryansuello",
-    "suello",
-    "mkdirp",
-    "tsmerge",
-    "githubusercontent",
-    "streetsidesoftware",
-    "vsmarketplacebadge",
-    "visualstudio",
-    //yours
-    "builtins",
-    "stylua",
-    "lspconfig",
-    "keymap",
-    "noremap",
-    "augroup",
-    "nvim",
-    "autocmd",
-    "neovim",
-    "treesitter",
-    "termcolors",
     "afile",
+    "augroup",
+    "autocmd",
+    "behance",
+    "bryansuello",
+    "builtins",
+    "doloribus",
+    "Gcash",
+    "githubusercontent",
+    "ipsum",
+    "keymap",
+    "lorem",
+    "lspconfig",
+    "mkdirp",
+    "neovim",
+    "noremap",
+    "nvim",
     "packadd",
+    "Payamaya",
+    "Paymaya",
+    "streetsidesoftware",
+    "stylua",
+    "suello",
+    "termcolors",
+    "treesitter",
+    "tsmerge",
+    "visualstudio",
+    "vsmarketplacebadge"
   ],
   // flagWords - list of words to be always considered incorrect
   // This is useful for offensive words and common spelling errors.
@@ -39,7 +45,7 @@
   "flagWords": [
     "hte"
   ],
-  "diagnosticLevel": "information",
+  "diagnosticLevel": "information"
 }
 //   "bin" - to ignore any directory / file called bin.
 //   "translations/**" - to ignore all files under the translations directory.
