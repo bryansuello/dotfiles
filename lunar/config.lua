@@ -281,9 +281,14 @@ lvim.plugins = {
   { --autoclose and autorename tag
     "windwp/nvim-ts-autotag",
     config = function()
-      require("nvim-ts-autotag").setup()
+      require("nvim-ts-autotag").setup({
+        autotag = {
+          enable = true,
+        }
+      })
     end,
   },
+  ("AndrewRadev/tagalong.vim"), --works auto renaming closing tag, ts-autotag dont
   {
     "metakirby5/codi.vim",
     cmd = "Codi",
