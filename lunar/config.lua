@@ -237,7 +237,47 @@ lvim.plugins = {
       require("todo-comments").setup()
     end,
   },
-  { "aca/emmet-ls" }, --rainbow parentheses
+  {
+    "aca/emmet-ls",
+    config = function()
+      local lspconfig = require("lspconfig")
+      local configs = require("lspconfig/configs")
+
+      local capabilities = vim.lsp.protocol.make_client_capabilities()
+      capabilities.textDocument.completion.completionItem.snippetSupport = true
+      capabilities.textDocument.completion.completionItem.resolveSupport = {
+        properties = {
+          "documentation",
+          "detail",
+          "additionalTextEdits",
+        },
+      }
+
+      if not lspconfig.emmet_ls then
+        configs.emmet_ls = {
+          default_config = {
+            cmd = { "emmet-ls", "--stdio" },
+            filetypes = {
+              "html",
+              "css",
+              "javascript",
+              "typescript",
+              "eruby",
+              "typescriptreact",
+              "javascriptreact",
+              "svelte",
+              "vue",
+            },
+            root_dir = function(fname)
+              return vim.loop.cwd()
+            end,
+            settings = {},
+          },
+        }
+      end
+      lspconfig.emmet_ls.setup({ capabilities = capabilities })
+    end,
+  },
   { --autoclose and autorename tag
     "windwp/nvim-ts-autotag",
     config = function()
@@ -249,7 +289,7 @@ lvim.plugins = {
     cmd = "Codi",
   },
   {
-    "p00f/nvim-ts-rainbow",
+    "p00f/nvim-ts-rainbow", --rainbow parens
   },
   {
     "norcalli/nvim-colorizer.lua",
