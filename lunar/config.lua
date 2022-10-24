@@ -289,6 +289,7 @@ lvim.plugins = {
     end,
   },
   ("AndrewRadev/tagalong.vim"), --works auto renaming closing tag, ts-autotag dont
+  { "mg979/vim-visual-multi" },
   {
     "metakirby5/codi.vim",
     cmd = "Codi",
@@ -310,6 +311,8 @@ lvim.plugins = {
       })
     end,
   },
+  --tailwindcss colors
+  { 'themaxmarchuk/tailwindcss-colors.nvim' }
   -- {
   --   'christianchiarulli/nvcode-color-schemes.vim'
   -- }
