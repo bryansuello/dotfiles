@@ -343,7 +343,7 @@ lvim.builtin.lualine.style = "default" -- or "none"
 --- ------------------------------------------------------------------------------------------------------
 vim.opt.backup = false -- creates a backup file
 vim.opt.clipboard = "unnamedplus" -- allows neovim to access the system clipboard
-vim.opt.cmdheight = 2 -- more space in the neovim command line for displaying messages
+vim.opt.cmdheight = 0 -- more space in the neovim command line for displaying messages. 2 is  default
 --vim.opt.colorcolumn = "99999" -- fixes indentline for now
 vim.opt.colorcolumn = "80" -- set to 99999 to not display
 vim.opt.completeopt = { "menuone", "noselect" }
