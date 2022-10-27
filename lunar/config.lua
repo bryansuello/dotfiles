@@ -11,7 +11,7 @@ an executable
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save = true
-lvim.colorscheme = "tokyonight"
+lvim.colorscheme = "nvcode" --or kanagawa, tokyonight
 lvim.transparent_window = true
 -- to disable icons and use a minimalist setup, uncomment the following
 -- lvim.use_icons = false
@@ -23,7 +23,10 @@ lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"
 lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
 
+-- OWN
 vim.keymap.set("i", "kj", "<ESC>", { noremap = true, silent = true })
+lvim.keys.normal_mode["<A-g>"] = ":Telescope live_grep<CR>"
+lvim.keys.normal_mode["<A-f>"] = ":Telescope fd<CR>"
 -- vim.keymap.set("n", "<A-1>", ":HopChar1<CR>") -- specified in plugin
 -- unmap a default keymapping
 -- vim.keymap.del("n", "<C-Up>")
@@ -70,7 +73,8 @@ lvim.builtin.alpha.active = false
 lvim.builtin.alpha.mode = "dashboard"
 lvim.builtin.terminal.active = true
 lvim.builtin.nvimtree.setup.view.side = "left"
-lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
+-- lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
+lvim.builtin.nvimtree.setup.renderer.icons.show.git = true
 
 -- if you don't want all the parsers change this to a table of the ones you want
 lvim.builtin.treesitter.ensure_installed = {
@@ -159,11 +163,11 @@ linters.setup {
   --   -- these cannot contain whitespaces, options such as `--line-width 80` become either `{'--line-width', '80'}` or `{'--line-width=80'}`
   --   extra_args = { "--severity", "warning" },
   -- },
-  -- {
-  --   command = "codespell",
-  --   ---@usage specify which filetypes to enable. By default a providers will attach to all the filetypes it supports.
-  --   filetypes = { "javascript", "python" },
-  -- },
+  {
+    command = "codespell",
+    ---@usage specify which filetypes to enable. By default a providers will attach to all the filetypes it supports.
+    filetypes = { "javascript", "html", "css" },
+  },
   {
     command = "tidy",
     filetypes = { "html" },
@@ -213,16 +217,16 @@ lvim.plugins = {
       vim.api.nvim_set_keymap("n", "S", ":HopWord<cr>", { silent = true })
     end,
   },
-  -- {
-  --   'wfxr/minimap.vim',
-  --   run = "cargo install --locked code-minimap",
-  --   -- cmd = {"Minimap", "MinimapClose", "MinimapToggle", "MinimapRefresh", "MinimapUpdateHighlight"},
-  --   config = function()
-  --     vim.cmd("let g:minimap_width = 10")
-  --     vim.cmd("let g:minimap_auto_start = 1")
-  --     vim.cmd("let g:minimap_auto_start_win_enter = 1")
-  --   end,
-  -- },
+  {
+    'wfxr/minimap.vim',
+    run = "cargo install --locked code-minimap",
+    -- cmd = {"Minimap", "MinimapClose", "MinimapToggle", "MinimapRefresh", "MinimapUpdateHighlight"},
+    config = function()
+      vim.cmd("let g:minimap_width = 10")
+      vim.cmd("let g:minimap_auto_start = 1")
+      vim.cmd("let g:minimap_auto_start_win_enter = 1")
+    end,
+  },
   {
     "tpope/vim-surround",
     -- make sure to change the value of `timeoutlen` if it's not triggering correctly, see https://github.com/tpope/vim-surround/issues/117
@@ -312,10 +316,12 @@ lvim.plugins = {
     end,
   },
   --tailwindcss colors
-  { 'themaxmarchuk/tailwindcss-colors.nvim' }
-  -- {
-  --   'christianchiarulli/nvcode-color-schemes.vim'
-  -- }
+  { 'themaxmarchuk/tailwindcss-colors.nvim' },
+  -- kanagawa
+  -- { 'rebelot/kanagawa.nvim' },
+  {
+    'christianchiarulli/nvcode-color-schemes.vim'
+  }
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
