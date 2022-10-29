@@ -319,7 +319,7 @@ lvim.plugins = {
   { 'themaxmarchuk/tailwindcss-colors.nvim' },
   -- kanagawa
   -- { 'rebelot/kanagawa.nvim' },
-  { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' },
+  { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }, --gitdiff
   {
     'christianchiarulli/nvcode-color-schemes.vim'
   },
@@ -387,7 +387,7 @@ vim.opt.number = true -- set numbered lines
 vim.opt.relativenumber = true -- set relative numbered lines
 vim.opt.numberwidth = 4 -- set number column width to 2 {default 4}
 vim.opt.signcolumn = "yes" -- always show the sign column otherwise it would shift the text each time
-vim.opt.wrap = false -- display lines as one long line
+vim.opt.wrap = true -- display lines as one long line
 vim.opt.spell = false
 vim.opt.spelllang = "en"
 vim.opt.scrolloff = 8 -- is one of my fav
