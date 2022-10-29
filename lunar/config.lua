@@ -11,7 +11,7 @@ an executable
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save = true
-lvim.colorscheme = "nvcode" --or kanagawa, tokyonight
+lvim.colorscheme = "onedark" --or kanagawa, tokyonight
 lvim.transparent_window = true
 -- to disable icons and use a minimalist setup, uncomment the following
 -- lvim.use_icons = false
@@ -164,7 +164,7 @@ linters.setup {
   --   extra_args = { "--severity", "warning" },
   -- },
   {
-    command = "codespell",
+    command = "cspell",
     ---@usage specify which filetypes to enable. By default a providers will attach to all the filetypes it supports.
     filetypes = { "javascript", "html", "css" },
   },
@@ -317,12 +317,13 @@ lvim.plugins = {
   },
   --tailwindcss colors
   { 'themaxmarchuk/tailwindcss-colors.nvim' },
+
+  --THEMES
   -- kanagawa
   -- { 'rebelot/kanagawa.nvim' },
-  { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }, --gitdiff
-  {
-    'christianchiarulli/nvcode-color-schemes.vim'
-  },
+  -- {
+  --   'christianchiarulli/nvcode-color-schemes.vim'
+  -- },
 
   -- Autocommands (https://neovim.io/doc/user/autocmd.html)
   -- vim.api.nvim_create_autocmd("BufEnter", {
