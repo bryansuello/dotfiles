@@ -23,10 +23,11 @@ lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"
 lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
 
--- OWN
+-- OWN KEYMAPS
 vim.keymap.set("i", "kj", "<ESC>", { noremap = true, silent = true })
 lvim.keys.normal_mode["<A-g>"] = ":Telescope live_grep<CR>"
 lvim.keys.normal_mode["<A-f>"] = ":Telescope fd<CR>"
+lvim.keys.normal_mode["<F5>"] = ":setlocal spell!<CR>" --toggle spellcheck
 -- vim.keymap.set("n", "<A-1>", ":HopChar1<CR>") -- specified in plugin
 -- unmap a default keymapping
 -- vim.keymap.del("n", "<C-Up>")
@@ -175,7 +176,7 @@ linters.setup {
   },
 }
 
--- Additional Plugins
+-- Additional Plugins, OWN INSTALLED
 lvim.plugins = {
   {
     "folke/trouble.nvim",
@@ -200,14 +201,6 @@ lvim.plugins = {
       }
     end
   },
-  -- {
-  --   "phaazon/hop.nvim",
-  --   branch = "v2", -- optional but strongly recommended
-  --   config = function()
-  --     -- you can configure Hop the way you like here; see :h hop-config
-  --     require("hop").setup({ keys = "etovxqpdygfblzhckisuran" })
-  --   end,
-  -- },
   {
     "phaazon/hop.nvim",
     event = "BufRead",
@@ -281,9 +274,9 @@ lvim.plugins = {
       end
       lspconfig.emmet_ls.setup({ capabilities = capabilities })
     end,
-  },
-  { --autoclose and autorename tag
-    "windwp/nvim-ts-autotag",
+  }, --emmet-ls end
+  {
+    "windwp/nvim-ts-autotag", --autoclose and autorename tag
     config = function()
       require("nvim-ts-autotag").setup({
         autotag = {
@@ -315,15 +308,14 @@ lvim.plugins = {
       })
     end,
   },
-  --tailwindcss colors
-  { 'themaxmarchuk/tailwindcss-colors.nvim' },
+  { 'themaxmarchuk/tailwindcss-colors.nvim' }, --tailwindcss colorizer
 
   --THEMES
   -- kanagawa
   -- { 'rebelot/kanagawa.nvim' },
-  -- {
-  --   'christianchiarulli/nvcode-color-schemes.vim'
-  -- },
+  {
+    'christianchiarulli/nvcode-color-schemes.vim' --dark plus, onedark, etc
+  },
 
   -- Autocommands (https://neovim.io/doc/user/autocmd.html)
   -- vim.api.nvim_create_autocmd("BufEnter", {
