@@ -11,7 +11,7 @@ an executable
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save = true
-lvim.colorscheme = "onedark" --or kanagawa, tokyonight
+lvim.colorscheme = "gruvbox" --or kanagawa, tokyonight, onedark, gruvbox
 lvim.transparent_window = true
 -- to disable icons and use a minimalist setup, uncomment the following
 -- lvim.use_icons = false
@@ -164,16 +164,16 @@ linters.setup {
   --   -- these cannot contain whitespaces, options such as `--line-width 80` become either `{'--line-width', '80'}` or `{'--line-width=80'}`
   --   extra_args = { "--severity", "warning" },
   -- },
-  {
-    command = "cspell",
-    ---@usage specify which filetypes to enable. By default a providers will attach to all the filetypes it supports.
-    filetypes = { "javascript", "html", "css" },
-  },
-  {
-    command = "tidy",
-    filetypes = { "html" },
-    extra_args = { "warning" },
-  },
+  -- { --not working, or add PATH
+  --   command = "cspell",
+  --   ---@usage specify which filetypes to enable. By default a providers will attach to all the filetypes it supports.
+  --   filetypes = { "javascript", "html", "css" },
+  -- },
+  -- { --not working, or add PATH
+  --   command = "tidy",
+  --   filetypes = { "html" },
+  --   extra_args = { "warning" },
+  -- },
 }
 
 -- Additional Plugins, OWN INSTALLED
