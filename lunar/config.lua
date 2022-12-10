@@ -221,6 +221,14 @@ lvim.plugins = {
   --   end,
   -- },
   {
+    'gorbit99/codewindow.nvim', --minimap works (leader - mo-open, mc-close, mf-focus, mm-toggle)
+    config = function()
+      local codewindow = require('codewindow')
+      codewindow.setup()
+      codewindow.apply_default_keybinds()
+    end,
+  },
+  {
     "tpope/vim-surround",
     -- make sure to change the value of `timeoutlen` if it's not triggering correctly, see https://github.com/tpope/vim-surround/issues/117
     -- setup = function()
@@ -313,9 +321,13 @@ lvim.plugins = {
   --THEMES
   -- kanagawa
   -- { 'rebelot/kanagawa.nvim' },
+  -- {
+  --   'christianchiarulli/nvcode-color-schemes.vim' --dark plus, onedark, etc multiple colroschemes
+  -- },
   {
-    'christianchiarulli/nvcode-color-schemes.vim' --dark plus, onedark, etc
+    'ellisonleao/gruvbox.nvim' --more vibrant gruvbox, easier to ur eyes
   },
+
 
   -- Autocommands (https://neovim.io/doc/user/autocmd.html)
   -- vim.api.nvim_create_autocmd("BufEnter", {
@@ -343,7 +355,7 @@ lvim.builtin.lualine.style = "default" -- or "none"
 --- ------------------------------------------------------------------------------------------------------
 vim.opt.backup = false -- creates a backup file
 vim.opt.clipboard = "unnamedplus" -- allows neovim to access the system clipboard
-vim.opt.cmdheight = 1 -- more space in the neovim command line for displaying messages. 2 is  default
+vim.opt.cmdheight = 0 -- more space in the neovim command line for displaying messages. 2 is  default
 --vim.opt.colorcolumn = "99999" -- fixes indentline for now
 vim.opt.colorcolumn = "80" -- set to 99999 to not display
 vim.opt.completeopt = { "menuone", "noselect" }
