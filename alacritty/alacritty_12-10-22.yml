@@ -1,5 +1,5 @@
-# BACKGROUND OPACITY SET TO SHOW DESKTOP BACKGROUND
-# added other fonts- Iosevka and Monoid for easy switching
+# opacity set to .9 to show desktop bg
+# commented out JetBrainsMono and Monoid as backup font choices
 
 # Configuration for Alacritty, the GPU enhanced terminal emulator.
 
@@ -26,7 +26,7 @@
   # available, otherwise `xterm-256color` is used.
   #TERM: alacritty
 
-  #window:
+window:
   # Window dimensions (changes require restart)
   #
   # Number of lines/columns (not pixels) in the terminal. Both lines and columns
@@ -65,13 +65,13 @@
   # Values for `decorations` (macOS only):
   #     - transparent: Title bar, transparent background and title bar buttons
   #     - buttonless: Title bar, transparent background and no title bar buttons
-  #decorations: full
+  #decorations: none
 
   # Background opacity
   #
   # Window opacity as a floating point number from `0.0` to `1.0`.
   # The value `0.0` is completely transparent and `1.0` is opaque.
-  #opacity: 0.9
+  opacity: 0.9
 
   # Startup Mode (changes require restart)
   #
@@ -82,7 +82,7 @@
   #
   # Values for `startup_mode` (macOS only):
   #   - SimpleFullscreen
-  #startup_mode: Windowed
+  #startup_mode: Fullscreen
 
   # Window title
   #title: Alacritty
@@ -161,7 +161,8 @@ font:
     #
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Monoid Nerd Font
+    family: Iosevka
+    # family: Monoid Nerd Font
     # family: JetBrainsMono NF
 
     # The `style` can be specified to pick a specific face.
