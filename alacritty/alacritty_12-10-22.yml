@@ -1,5 +1,6 @@
 # opacity set to .9 to show desktop bg
 # commented out JetBrainsMono and Monoid as backup font choices
+# fullscreen  on startup, window decorations(top bar, close button) set to none
 
 # Configuration for Alacritty, the GPU enhanced terminal emulator.
 
@@ -82,7 +83,7 @@ window:
   #
   # Values for `startup_mode` (macOS only):
   #   - SimpleFullscreen
-  #startup_mode: Fullscreen
+  startup_mode: Fullscreen
 
   # Window title
   #title: Alacritty
@@ -102,7 +103,7 @@ window:
   # Override the variant of the GTK theme/Wayland client side decorations.
   # Commonly supported values are `dark` and `light`. Set this to `None` to use
   # the default theme variant.
-  #decorations_theme_variant: None
+  decorations_theme_variant: None
 
 #scrolling:
   # Maximum number of lines in the scrollback buffer.
