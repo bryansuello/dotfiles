@@ -11,7 +11,7 @@ an executable
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save = true
-lvim.colorscheme = "gruvbox" --or kanagawa, tokyonight, onedark, gruvbox
+lvim.colorscheme = "tokyonight" --or kanagawa, tokyonight, onedark, gruvbox
 lvim.transparent_window = true
 -- to disable icons and use a minimalist setup, uncomment the following
 -- lvim.use_icons = false
@@ -186,12 +186,12 @@ lvim.plugins = {
     "rmagatti/goto-preview",
     config = function()
       require('goto-preview').setup {
-        width = 120; -- Width of the floating window
-        height = 25; -- Height of the floating window
-        default_mappings = true; -- Bind default mappings
-        debug = false; -- Print debug information
-        opacity = nil; -- 0-100 opacity level of the floating window where 100 is fully transparent.
-        post_open_hook = nil -- A function taking two arguments, a buffer and a window to be ran as a hook.
+        width = 120,             -- Width of the floating window
+        height = 25,             -- Height of the floating window
+        default_mappings = true, -- Bind default mappings
+        debug = false,           -- Print debug information
+        opacity = nil,           -- 0-100 opacity level of the floating window where 100 is fully transparent.
+        post_open_hook = nil     -- A function taking two arguments, a buffer and a window to be ran as a hook.
         -- You can use "default_mappings = true" setup option
         -- Or explicitly set keybindings
         -- vim.cmd("nnoremap gpd <cmd>lua require('goto-preview').goto_preview_definition()<CR>")
@@ -282,7 +282,7 @@ lvim.plugins = {
       end
       lspconfig.emmet_ls.setup({ capabilities = capabilities })
     end,
-  }, --emmet-ls end
+  },                          --emmet-ls end
   {
     "windwp/nvim-ts-autotag", --autoclose and autorename tag
     config = function()
@@ -306,13 +306,13 @@ lvim.plugins = {
     "norcalli/nvim-colorizer.lua",
     config = function()
       require("colorizer").setup({ "css", "scss", "html", "javascript" }, {
-        RGB = true, -- #RGB hex codes
-        RRGGBB = true, -- #RRGGBB hex codes
+        RGB = true,      -- #RGB hex codes
+        RRGGBB = true,   -- #RRGGBB hex codes
         RRGGBBAA = true, -- #RRGGBBAA hex codes
-        rgb_fn = true, -- CSS rgb() and rgba() functions
-        hsl_fn = true, -- CSS hsl() and hsla() functions
-        css = true, -- Enable all CSS features: rgb_fn, hsl_fn, names, RGB, RRGGBB
-        css_fn = true, -- Enable all CSS *functions*: rgb_fn, hsl_fn
+        rgb_fn = true,   -- CSS rgb() and rgba() functions
+        hsl_fn = true,   -- CSS hsl() and hsla() functions
+        css = true,      -- Enable all CSS features: rgb_fn, hsl_fn, names, RGB, RRGGBB
+        css_fn = true,   -- Enable all CSS *functions*: rgb_fn, hsl_fn
       })
     end,
   },
@@ -353,46 +353,46 @@ lvim.builtin.lualine.style = "default" -- or "none"
 
 
 --- ------------------------------------------------------------------------------------------------------
-vim.opt.backup = false -- creates a backup file
-vim.opt.clipboard = "unnamedplus" -- allows neovim to access the system clipboard
-vim.opt.cmdheight = 0 -- more space in the neovim command line for displaying messages. 2 is  default
+vim.opt.backup = false                     -- creates a backup file
+vim.opt.clipboard = "unnamedplus"          -- allows neovim to access the system clipboard
+vim.opt.cmdheight = 1                      -- more space in the neovim command line for displaying messages. 2 is  default. setting 0 asks confirmation everytime u save
 --vim.opt.colorcolumn = "99999" -- fixes indentline for now
-vim.opt.colorcolumn = "80" -- set to 99999 to not display
+vim.opt.colorcolumn = "80"                 -- set to 99999 to not display
 vim.opt.completeopt = { "menuone", "noselect" }
-vim.opt.conceallevel = 0 -- so that `` is visible in markdown files
-vim.opt.fileencoding = "utf-8" -- the encoding written to a file
-vim.opt.foldmethod = "manual" -- folding set to "expr" for treesitter based folding
-vim.opt.foldexpr = "" -- set to "nvim_treesitter#foldexpr()" for treesitter based folding
-vim.opt.guifont = "monospace:h17" -- the font used in graphical neovim applications
-vim.opt.hidden = true -- required to keep multiple buffers and open multiple buffers
-vim.opt.hlsearch = true -- highlight all matches on previous search pattern
-vim.opt.ignorecase = true -- ignore case in search patterns
-vim.opt.mouse = "a" -- allow the mouse to be used in neovim
-vim.opt.pumheight = 10 -- pop up menu height
-vim.opt.showmode = false -- we don't need to see things like -- INSERT -- anymore
-vim.opt.showtabline = 2 -- always show tabs
-vim.opt.smartcase = true -- smart case
-vim.opt.smartindent = true -- make indenting smarter again
-vim.opt.splitbelow = true -- force all horizontal splits to go below current window
-vim.opt.splitright = true -- force all vertical splits to go to the right of current window
-vim.opt.swapfile = false -- creates a swapfile
-vim.opt.termguicolors = true -- set term gui colors (most terminals support this)
-vim.opt.timeoutlen = 100 -- time to wait for a mapped sequence to complete (in milliseconds)
-vim.opt.title = true -- set the title of window to the value of the titlestring
+vim.opt.conceallevel = 0                   -- so that `` is visible in markdown files
+vim.opt.fileencoding = "utf-8"             -- the encoding written to a file
+vim.opt.foldmethod = "manual"              -- folding set to "expr" for treesitter based folding
+vim.opt.foldexpr = ""                      -- set to "nvim_treesitter#foldexpr()" for treesitter based folding
+vim.opt.guifont = "monospace:h17"          -- the font used in graphical neovim applications
+vim.opt.hidden = true                      -- required to keep multiple buffers and open multiple buffers
+vim.opt.hlsearch = true                    -- highlight all matches on previous search pattern
+vim.opt.ignorecase = true                  -- ignore case in search patterns
+vim.opt.mouse = "a"                        -- allow the mouse to be used in neovim
+vim.opt.pumheight = 10                     -- pop up menu height
+vim.opt.showmode = false                   -- we don't need to see things like -- INSERT -- anymore
+vim.opt.showtabline = 2                    -- always show tabs
+vim.opt.smartcase = true                   -- smart case
+vim.opt.smartindent = true                 -- make indenting smarter again
+vim.opt.splitbelow = true                  -- force all horizontal splits to go below current window
+vim.opt.splitright = true                  -- force all vertical splits to go to the right of current window
+vim.opt.swapfile = false                   -- creates a swapfile
+vim.opt.termguicolors = true               -- set term gui colors (most terminals support this)
+vim.opt.timeoutlen = 100                   -- time to wait for a mapped sequence to complete (in milliseconds)
+vim.opt.title = true                       -- set the title of window to the value of the titlestring
 vim.opt.titlestring = "%<%F%=%l/%L - nvim" -- what the title of the window will be set to
 vim.opt.undodir = vim.fn.stdpath "cache" .. "/undo"
-vim.opt.undofile = true -- enable persistent undo
-vim.opt.updatetime = 300 -- faster completion
-vim.opt.writebackup = false -- if a file is being edited by another program (or was written to file while editing with another program) it is not allowed to be edited
-vim.opt.expandtab = true -- convert tabs to spaces
-vim.opt.shiftwidth = 2 -- the number of spaces inserted for each indentation
-vim.opt.tabstop = 2 -- insert 2 spaces for a tab
-vim.opt.cursorline = true -- highlight the current line
-vim.opt.number = true -- set numbered lines
-vim.opt.relativenumber = true -- set relative numbered lines
-vim.opt.numberwidth = 4 -- set number column width to 2 {default 4}
-vim.opt.signcolumn = "yes" -- always show the sign column otherwise it would shift the text each time
-vim.opt.wrap = true -- display lines as one long line
+vim.opt.undofile = true                    -- enable persistent undo
+vim.opt.updatetime = 300                   -- faster completion
+vim.opt.writebackup = false                -- if a file is being edited by another program (or was written to file while editing with another program) it is not allowed to be edited
+vim.opt.expandtab = true                   -- convert tabs to spaces
+vim.opt.shiftwidth = 2                     -- the number of spaces inserted for each indentation
+vim.opt.tabstop = 2                        -- insert 2 spaces for a tab
+vim.opt.cursorline = true                  -- highlight the current line
+vim.opt.number = true                      -- set numbered lines
+vim.opt.relativenumber = true              -- set relative numbered lines
+vim.opt.numberwidth = 4                    -- set number column width to 2 {default 4}
+vim.opt.signcolumn = "yes"                 -- always show the sign column otherwise it would shift the text each time
+vim.opt.wrap = true                        -- display lines as one long line
 vim.opt.spell = false
 vim.opt.spelllang = "en"
 vim.opt.scrolloff = 8 -- is one of my fav
@@ -408,33 +408,37 @@ vim.opt.sidescrolloff = 8
 local lineLengthWarning = 80
 local lineLengthError = 120
 lvim.builtin.lualine.sections = {
-  lualine_a = {}, lualine_b = {}, lualine_c = {},
-  lualine_x = {}, lualine_y = {}, lualine_z = {}
+  lualine_a = {},
+  lualine_b = {},
+  lualine_c = {},
+  lualine_x = {},
+  lualine_y = {},
+  lualine_z = {}
 }
 lvim.builtin.lualine.inactive_sections = {
-  lualine_a = {}, lualine_b = {}, lualine_c = {},
-  lualine_x = {}, lualine_y = {}, lualine_z = {}
+  lualine_a = {},
+  lualine_b = {},
+  lualine_c = {},
+  lualine_x = {},
+  lualine_y = {},
+  lualine_z = {}
 }
 -- }}}2
 
 -- Colours, maps and icons {{{2
 local colors = {
-  bg       = '#0f1117',
-  modetext = '#000000',
-
-  giticonbg = '#FF8800',
-  gitbg     = '#5C2C2E',
-  gittext   = '#C5C5C5',
-
-  diagerror   = '#F44747',
-  diagwarning = '#FF8800',
-  diaghint    = '#4FC1FF',
-  diaginfo    = '#FFCC66',
-
-  lspiconbg = '#68AF00',
-  lspbg     = '#304B2E',
-  lsptext   = '#C5C5C5',
-
+  bg               = '#0f1117',
+  modetext         = '#000000',
+  giticonbg        = '#FF8800',
+  gitbg            = '#5C2C2E',
+  gittext          = '#C5C5C5',
+  diagerror        = '#F44747',
+  diagwarning      = '#FF8800',
+  diaghint         = '#4FC1FF',
+  diaginfo         = '#FFCC66',
+  lspiconbg        = '#68AF00',
+  lspbg            = '#304B2E',
+  lsptext          = '#C5C5C5',
   typeiconbg       = '#FF8800',
   typebg           = '#5C2C2E',
   typetext         = '#C5C5C5',
@@ -442,31 +446,26 @@ local colors = {
   typetextmodified = '#FF3300',
   typeiconbgro     = '#000000',
   typetextreadonly = '#000000',
-
-  statsiconbg = '#9CDCFE',
-  statsbg     = '#5080A0',
-  statstext   = '#000000',
-
-  lineokfg        = '#000000',
-  lineokbg        = '#5080A0',
-  linelongerrorfg = '#FF0000',
-  linelongwarnfg  = '#FFFF00',
-  linelongbg      = '#5080A0',
-
-  shortbg   = '#DCDCAA',
-  shorttext = '#000000',
-
-  shortrightbg   = '#3F3F3F',
-  shortrighttext = '#7C4C4E',
-
-  red     = '#D16969',
-  yellow  = '#DCDCAA',
-  magenta = '#D16D9E',
-  green   = '#608B4E',
-  orange  = '#FF8800',
-  purple  = '#C586C0',
-  blue    = '#569CD6',
-  cyan    = '#4EC9B0'
+  statsiconbg      = '#9CDCFE',
+  statsbg          = '#5080A0',
+  statstext        = '#000000',
+  lineokfg         = '#000000',
+  lineokbg         = '#5080A0',
+  linelongerrorfg  = '#FF0000',
+  linelongwarnfg   = '#FFFF00',
+  linelongbg       = '#5080A0',
+  shortbg          = '#DCDCAA',
+  shorttext        = '#000000',
+  shortrightbg     = '#3F3F3F',
+  shortrighttext   = '#7C4C4E',
+  red              = '#D16969',
+  yellow           = '#DCDCAA',
+  magenta          = '#D16D9E',
+  green            = '#608B4E',
+  orange           = '#FF8800',
+  purple           = '#C586C0',
+  blue             = '#569CD6',
+  cyan             = '#4EC9B0'
 }
 
 local mode_map = {
