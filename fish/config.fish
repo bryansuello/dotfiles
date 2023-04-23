@@ -25,7 +25,10 @@ alias net="ping -c 3 google.com"
 alias battery="cat /sys/class/power_supply/BAT0/capacity"
 
 # locations
+# laptop(popOS)
 alias 1="cd ~/Dev/"
+# desktop(ubuntu)
+# alias 1="cd ~/Documents/dev/"
 alias 2="cd ~/.config/"
 alias downloads="cd ~/Downloads/"
 alias documents="cd ~/Documents/"
