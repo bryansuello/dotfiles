@@ -1,0 +1,26 @@
+.editor-actions {
+  display: none !important;
+}
+
+.windows {
+  font-family: Poppins, Hack, sans-serif;
+}
+
+
+.window-appicon{
+ display: none;
+}
+
+/* file explorer buttons */
+.title-actions { 
+  display: none;
+}
+
+.title:hover .title-actions {
+  display: flex;
+}
+
+/* file explorer title */
+.title-label > h2 {
+  display:none;
+}

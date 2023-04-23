@@ -1,0 +1,184 @@
+{
+  "editor.formatOnSave": true,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "editor.fontFamily": "'JetBrainsMono NF', 'Hack Nerd Font Mono', 'Fira Code iScript', 'JetBrainsMono Nerd Font', monospace, 'Droid Sans Fallback'",
+  "breadcrumbs.enabled": false,
+  "editor.fontLigatures": true,
+  //exclude editor from watching these directories to use less resources
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/node_modules/**": true
+  },
+  // VIM
+  // "vim.vimrc.path": "/home/daddy/.config/nvim/init.vim",
+  "vim.startInInsertMode": false,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "k",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "vim.easymotion": true,
+  "vim.leader": "<space>",
+  "editor.cursorBlinking": "solid",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      // {
+      //   "scope": "comment", //italicize comments for dark plus syntax theme
+      //   "settings": {
+      //     "fontStyle": "italic"
+      //   }
+      // }
+      {
+        "scope": [
+          //following will be in italic (=FlottFlott)
+          "comment",
+          "entity.name.type.class", //class names
+          "keyword", //import, export, return…
+          "constant", //String, Number, Boolean…, this, super
+          "storage.modifier", //static keyword
+          "storage.type.class.js" //class keyword
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          //following will be excluded from italics (VSCode has some defaults for italics)
+          "invalid",
+          "keyword.operator",
+          "constant.numeric.css",
+          "keyword.other.unit.px.css",
+          "constant.numeric.decimal.js",
+          "constant.numeric.json"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  //Date & Time extension
+  "dateTime.showDayOfMonth": true,
+  "dateTime.showMonth": true,
+  "dateTime.use24HourClock": false,
+  "dateTime.showAMPM": true,
+  "dateTime.customFormat": "ddd, MM-DD-YY, hh:mm A ",
+  "editor.semanticTokenColorCustomizations": {},
+  "editor.renderWhitespace": "all",
+  "workbench.sideBar.location": "right",
+  "zenMode.hideLineNumbers": false,
+  "zenMode.hideStatusBar": false,
+  "zenMode.hideTabs": false,
+  "zenMode.centerLayout": false,
+  "zenMode.restore": false,
+  "zenMode.silentNotifications": false,
+  "workbench.startupEditor": "none",
+  "editor.codeLens": false,
+  "telemetry.telemetryLevel": "off",
+  "editor.linkedEditing": true,
+  "editor.guides.bracketPairs": true,
+  "editor.hideCursorInOverviewRuler": true,
+  //"editor.colorDecorators": false //color box beside color code
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.verticalScrollbarSize": 0, //minimap inside scrollbar
+  "workbench.activityBar.visible": false,
+  "workbench.editor.tabCloseButton": "off",
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.layoutControl.enabled": false,
+  // "window.menuBarVisibility": "compact", //use :q, :bd, or :bdelete - the vim way
+  "vscode_custom_css.imports": [
+    "file:///C:/Users/brys/Documents/custom.css"
+  ],
+  "window.titleBarStyle": "custom",
+  "window.menuBarVisibility": "hidden",
+  "terminal.explorerKind": "external",
+  // "window.title": "💯",
+  "window.newWindowDimensions": "inherit",
+  "workbench.colorCustomizations": {
+    "titleBar.activeForeground": "#151515",
+    "titleBar.activeBackground": "#151515",
+    "titleBar.inactiveBackground": "#151515",
+    "editorGroupHeader.tabsBorder": "#151515",
+    "editorGroupHeader.tabsBackground": "#151515",
+    "tab.inactiveBackground": "#252525",
+    "tab.inactiveForeground": "#ffffff",
+    "statusBar.border": "#151515",
+    "statusBar.background": "#151515",
+    "statusBar.foreground": "#0DFF00",
+    "editor.background": "#151515"
+  },
+  "editor.rulers": [
+    80
+  ],
+  "colorize.languages": [
+    "javascript",
+    "typescript",
+    "php"
+  ], //bring colorize to javascript
+  //prettier
+  "prettier.singleQuote": true, //singe quotes for javascript files
+  "prettier.arrowParens": "avoid",
+  "prettier.semi": true,
+  "editor.glyphMargin": false,
+  "php.validate.executablePath": "C:/xampp/php/php.exe",
+  "scm.diffDecorationsGutterPattern": {
+    "added": true
+  },
+  "scm.diffDecorations": "all",
+  "search.exclude": {
+    //exclude dirs from global search
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/*.code-search": true
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "liveServer.settings.NoBrowser": false,
+  "liveServer.settings.AdvanceCustomBrowserCmdLine": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe --private-window",
+  "liveServer.settings.CustomBrowser": "microsoft-edge",
+  "resmon.show.cpuusage": false,
+  "resmon.show.cpufreq": false,
+  "resmon.show.mem": false,
+  "editor.wordWrap": "wordWrapColumn",
+  "vim.smartRelativeLine": true,
+  "terminal.integrated.defaultProfile.linux": "fish",
+  "terminal.integrated.fontSize": 12.5,
+  "workbench.panel.defaultLocation": "right",
+  "background.enabled": true,
+  "background.loop": false,
+  "background.useDefault": false,
+  "background.useFront": false,
+  "background.style": {
+    "content": "''",
+    "pointer-events": "none",
+    "position": "absolute",
+    "z-index": "99999",
+    "width": "70%",
+    "height": "100%",
+    "margin-left": "30%",
+    "background-position": "right",
+    "background-size": "cover",
+    "background-repeat": "no-repeat",
+    "opacity": 1
+  },
+  "background.customImages": [
+    "file:///C:/Users/brys/Documents/ahe0.jpg"
+  ],
+  "editor.fontSize": 13,
+  "editor.stickyScroll.enabled": true,
+  "glassit.alpha": 220,
+  "workbench.colorTheme": "Tokyo Night"
+}
