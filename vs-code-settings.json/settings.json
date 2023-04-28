@@ -19,13 +19,8 @@
   "vim.startInInsertMode": false,
   "vim.insertModeKeyBindings": [
     {
-      "before": [
-        "k",
-        "j"
-      ],
-      "after": [
-        "<Esc>"
-      ]
+      "before": ["k", "j"],
+      "after": ["<Esc>"]
     }
   ],
   "vim.easymotion": true,
@@ -71,11 +66,12 @@
     ]
   },
   //Date & Time extension
-  // "dateTime.showDayOfMonth": true,
-  // "dateTime.showMonth": true,
-  // "dateTime.use24HourClock": false,
-  // "dateTime.showAMPM": true,
-  // "dateTime.customFormat": "ddd, MM-DD-YY, hh:mm A ",
+  "dateTime.showDayOfMonth": true,
+  "dateTime.showMonth": true,
+  "dateTime.use24HourClock": false,
+  "dateTime.showAMPM": true,
+  "dateTime.customFormat": "ddd, MM-DD-YY, hh:mm A ",
+  //Date & Time extension end
   "editor.semanticTokenColorCustomizations": {},
   "editor.renderWhitespace": "all",
   "workbench.sideBar.location": "left",
@@ -119,14 +115,8 @@
     // "statusBar.foreground": "#0DFF00",
     // "editor.background": "#151515"
   },
-  "editor.rulers": [
-    80
-  ],
-  "colorize.languages": [
-    "javascript",
-    "typescript",
-    "php"
-  ], //bring colorize to javascript
+  "editor.rulers": [80],
+  "colorize.languages": ["javascript", "typescript", "php"], //bring colorize to javascript
   //prettier
   "prettier.singleQuote": true, //singe quotes for javascript files
   "prettier.arrowParens": "avoid",
@@ -183,5 +173,6 @@
   "security.workspace.trust.untrustedFiles": "open",
   "workbench.colorTheme": "Kanagawa Black",
   "editor.stickyScroll.enabled": true,
-  "editor.stickyScroll.maxLineCount": 3
+  "editor.minimap.enabled": false
+  // "editor.stickyScroll.maxLineCount": 3
 }
