@@ -112,7 +112,7 @@
     // "tab.inactiveForeground": "#ffffff",
     // "statusBar.border": "#151515",
     // "statusBar.background": "#151515",
-    // "statusBar.foreground": "#0DFF00",
+    "statusBar.foreground": "#0DFF00"
     // "editor.background": "#151515"
   },
   "editor.rulers": [80],
@@ -172,7 +172,8 @@
   "vim.matchpairs": "(:),{:},[:],<:>",
   "security.workspace.trust.untrustedFiles": "open",
   "workbench.colorTheme": "Kanagawa Black",
-  "editor.stickyScroll.enabled": true,
   "editor.minimap.enabled": false
   // "editor.stickyScroll.maxLineCount": 3
 }
+
+// turned off sticky scroll
