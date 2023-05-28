@@ -1,7 +1,14 @@
+-- COLOR Read the docs: https://www.lunarvim.org/docs/configuration
+-- Video Tutorials: https://www.youtube.com/watch?v=sFA9kX-Ud_c&list=PLhoH5vyxr6QqGu0i7tt_XoVK9v-KvZ3m6
+-- Forum: https://www.reddit.com/r/lunarvim/
+-- Discord: https://discord.com/invite/Xb9B4Ny
+
+
+
 --[[
 lvim is the global options object
 
-Linters should be
+Linters should bCOLOR e
 filled in as strings with either
 a global executable or a path to
 an executable
@@ -11,7 +18,7 @@ an executable
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save = true
-lvim.colorscheme = "monokai" --or kanagawa, tokyonight, onedark, gruvbox, monokai
+lvim.colorscheme = "dracula" --or kanagawa, tokyonight, onedark, gruvbox, monokai
 lvim.transparent_window = true
 -- to disable icons and use a minimalist setup, uncomment the following
 -- lvim.use_icons = false
@@ -317,14 +324,14 @@ lvim.plugins = {
     end,
   },
   { 'themaxmarchuk/tailwindcss-colors.nvim' }, --tailwindcss colorizer
-  { 'tanvirtin/monokai.nvim' },
 
-  --THEMES
+  --COLOR THEMES
+  { 'tanvirtin/monokai.nvim' },
   -- kanagawa
   -- { 'rebelot/kanagawa.nvim' },
-  -- {
-  --   'christianchiarulli/nvcode-color-schemes.vim' --dark plus, onedark, etc multiple colroschemes
-  -- },
+  {
+    'christianchiarulli/nvcode-color-schemes.vim' --dark plus, onedark, etc multiple colroschemes
+  },
   -- {
   --   'ellisonleao/gruvbox.nvim' --more vibrant gruvbox, easier to ur eyes
   -- },
