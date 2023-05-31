@@ -111,7 +111,7 @@
     // "tab.inactiveBackground": "#252525",
     // "tab.inactiveForeground": "#ffffff",
     // "statusBar.border": "#151515",
-    // "statusBar.background": "#151515",
+    "statusBar.background": "#151515",
     "statusBar.foreground": "#0DFF00"
     // "editor.background": "#151515"
   },
@@ -164,15 +164,55 @@
   // },
   // "glassit.alpha": 220,
   // "background.customImages": ["file:///C:/Users/brys/Documents/ahe0.jpg"],
-  "editor.fontSize": 14,
+  "editor.fontSize": 15,
   "workbench.startupEditor": "none",
   "[php]": {
     "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
   },
   "vim.matchpairs": "(:),{:},[:],<:>",
   "security.workspace.trust.untrustedFiles": "open",
-  "workbench.colorTheme": "Kanagawa Black",
-  "editor.minimap.enabled": false
+  "workbench.colorTheme": "Dark Material Dracula",
+  "editor.minimap.enabled": false,
+  "cSpell.enabledLanguageIds": [
+    "asciidoc",
+    "c",
+    "cpp",
+    "csharp",
+    "css",
+    "elixir",
+    "erlang",
+    "git-commit",
+    "go",
+    "graphql",
+    "handlebars",
+    "haskell",
+    "html",
+    "jade",
+    "java",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "jsonc",
+    "jupyter",
+    "latex",
+    "less",
+    "php",
+    "plaintext",
+    "python",
+    "pug",
+    "restructuredtext",
+    "rust",
+    "scala",
+    "scss",
+    "scminput",
+    "swift",
+    "text",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "yaml",
+    "yml"
+  ]
   // "editor.stickyScroll.maxLineCount": 3
 }
 
