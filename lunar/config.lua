@@ -324,14 +324,16 @@ lvim.plugins = {
     end,
   },
   { 'themaxmarchuk/tailwindcss-colors.nvim' }, --tailwindcss colorizer
+  { 'briancollins/vim-jst' },                  --ejs syntax highlighting: seems to work, syntax but formatting doesn't
 
   --COLOR THEMES
-  { 'tanvirtin/monokai.nvim' },
+  { 'Mofiqul/dracula.nvim' }, -- dracula theme
+  -- { 'tanvirtin/monokai.nvim' },
   -- kanagawa
   -- { 'rebelot/kanagawa.nvim' },
-  {
-    'christianchiarulli/nvcode-color-schemes.vim' --dark plus, onedark, etc multiple colroschemes
-  },
+  -- {
+  --   'christianchiarulli/nvcode-color-schemes.vim' --dark plus, onedark, etc multiple colroschemes
+  -- },
   -- {
   --   'ellisonleao/gruvbox.nvim' --more vibrant gruvbox, easier to ur eyes
   -- },
