@@ -77,7 +77,6 @@
   "workbench.sideBar.location": "left",
   "zenMode.hideLineNumbers": false,
   "zenMode.hideStatusBar": false,
-  "zenMode.hideTabs": false,
   "zenMode.centerLayout": false,
   "zenMode.restore": false,
   "zenMode.silentNotifications": false,
@@ -89,8 +88,7 @@
   //"editor.colorDecorators": false //color box beside color code
   "editor.scrollbar.horizontal": "hidden",
   "editor.scrollbar.vertical": "hidden",
-  "editor.scrollbar.verticalScrollbarSize": 0, //minimap inside scrollbar
-  "workbench.activityBar.visible": false, //the side bar
+  "editor.scrollbar.verticalScrollbarSize": 0, //the side bar
   "workbench.editor.tabCloseButton": "off",
   "workbench.editor.tabSizing": "shrink",
   "workbench.layoutControl.enabled": false,
@@ -99,7 +97,7 @@
   "window.titleBarStyle": "custom",
   "window.menuBarVisibility": "hidden",
   "terminal.explorerKind": "external",
-  "window.title": "💯",
+  "window.title": "𝑨𝒖𝒕 𝑽𝒊𝒏𝒄𝒆𝒓𝒆 𝑨𝒖𝒕 𝑴𝒐𝒓𝒊", //Aut Vincere Aut Mori
   "window.newWindowDimensions": "inherit",
   "workbench.colorCustomizations": {
     // "titleBar.activeForeground": "#151515"
@@ -212,7 +210,8 @@
     "vue",
     "yaml",
     "yml"
-  ]
+  ],
+  "workbench.activityBar.location": "hidden"
   // "editor.stickyScroll.maxLineCount": 3
 }
 
