@@ -7,7 +7,7 @@
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
-  "editor.fontFamily": "'JetBrainsMono NF','Iosevka', 'Hack Nerd Font Mono', 'Fira Code iScript', 'JetBrainsMono Nerd Font', monospace, 'Droid Sans Fallback'",
+  "editor.fontFamily": "'JetBrainsMono NFM','Iosevka', 'Hack Nerd Font Mono', 'Fira Code iScript', 'JetBrainsMono Nerd Font', monospace, 'Droid Sans Fallback'",
   "editor.fontLigatures": true,
   //exclude editor from watching these directories to use less resources
   "files.watcherExclude": {
@@ -19,8 +19,13 @@
   "vim.startInInsertMode": false,
   "vim.insertModeKeyBindings": [
     {
-      "before": ["k", "j"],
-      "after": ["<Esc>"]
+      "before": [
+        "k",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
     }
   ],
   "vim.easymotion": true,
@@ -70,7 +75,7 @@
   "dateTime.showMonth": true,
   "dateTime.use24HourClock": false,
   "dateTime.showAMPM": true,
-  "dateTime.customFormat": "ddd, MM-DD-YY, hh:mm A ",
+  "dateTime.customFormat": "dddd,   MM-DD-YY,   hh:mm A ",
   //Date & Time extension end
   "editor.semanticTokenColorCustomizations": {},
   "editor.renderWhitespace": "all",
@@ -97,7 +102,7 @@
   "window.titleBarStyle": "custom",
   "window.menuBarVisibility": "hidden",
   "terminal.explorerKind": "external",
-  "window.title": "𝑨𝒖𝒕 𝑽𝒊𝒏𝒄𝒆𝒓𝒆 𝑨𝒖𝒕 𝑴𝒐𝒓𝒊", //Aut Vincere Aut Mori
+  "window.title": "𝑨𝒖𝒕 𝑽𝒊𝒏𝒄𝒆𝒓𝒆 𝑨𝒖𝒕 𝑴𝒐𝒓𝒊",
   "window.newWindowDimensions": "inherit",
   "workbench.colorCustomizations": {
     // "titleBar.activeForeground": "#151515"
@@ -113,14 +118,18 @@
     "statusBar.foreground": "#0DFF00"
     // "editor.background": "#151515"
   },
-  "editor.rulers": [80],
-  "colorize.languages": ["javascript", "typescript", "php"], //bring colorize to javascript
+  "editor.rulers": [
+    80
+  ],
+  "colorize.languages": [
+    "javascript",
+    "typescript",
+    "php"
+  ], //bring colorize to javascript
   //prettier
   "prettier.singleQuote": true, //singe quotes for javascript files
   "prettier.arrowParens": "avoid",
   "prettier.semi": true,
-  // "editor.glyphMargin": false, //margin on the left side of line numbers
-  "php.validate.executablePath": "/opt/lampp/bin/php",
   "scm.diffDecorationsGutterPattern": {
     "added": true
   },
@@ -169,7 +178,7 @@
   },
   "vim.matchpairs": "(:),{:},[:],<:>",
   "security.workspace.trust.untrustedFiles": "open",
-  "workbench.colorTheme": "Dark Material Dracula",
+  "workbench.colorTheme": "Dracula At Night",
   "editor.minimap.enabled": false,
   "cSpell.enabledLanguageIds": [
     "asciidoc",
@@ -211,8 +220,8 @@
     "yaml",
     "yml"
   ],
-  "workbench.activityBar.location": "hidden"
+  //"workbench.activityBar.location": "hidden",
+  "workbench.editor.tabActionCloseVisibility": false
   // "editor.stickyScroll.maxLineCount": 3
 }
-
 // turned off sticky scroll
