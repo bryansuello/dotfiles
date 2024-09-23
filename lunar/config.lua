@@ -1130,3 +1130,6 @@ local filter_notify = function(text, level, opts)
   orig_notify(text, level, opts)
 end
 vim.notify = filter_notify
+
+
+___
