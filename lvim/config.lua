@@ -1,3 +1,9 @@
+-- Read the docs: https://www.lunarvim.org/docs/configuration
+-- Example configs: https://github.com/LunarVim/starter.lvim
+-- Video Tutorials: https://www.youtube.com/watch?v=sFA9kX-Ud_c&list=PLhoH5vyxr6QqGu0i7tt_XoVK9v-KvZ3m6
+-- Forum: https://www.reddit.com/r/lunarvim/
+-- Discord: https://discord.com/invite/Xb9B4Ny
+
 -- COLOR Read the docs: https://www.lunarvim.org/docs/configuration
 -- Video Tutorials: https://www.youtube.com/watch?v=sFA9kX-Ud_c&list=PLhoH5vyxr6QqGu0i7tt_XoVK9v-KvZ3m6
 -- Forum: https://www.reddit.com/r/lunarvim/
@@ -18,7 +24,7 @@ an executable
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save = true
-lvim.colorscheme = "dracula" --or kanagawa, tokyonight, onedark, gruvbox, monokai
+lvim.colorscheme = "vscode" --or kanagawa, tokyonight, onedark, gruvbox, monokai, dracula
 lvim.transparent_window = true
 -- to disable icons and use a minimalist setup, uncomment the following
 -- lvim.use_icons = false
@@ -307,9 +313,6 @@ lvim.plugins = {
   --   cmd = "Codi",
   -- },
   {
-    "p00f/nvim-ts-rainbow", --rainbow parens
-  },
-  {
     "norcalli/nvim-colorizer.lua",
     config = function()
       require("colorizer").setup({ "css", "scss", "html", "javascript" }, {
@@ -328,6 +331,7 @@ lvim.plugins = {
 
   --COLOR THEMES
   { 'Mofiqul/dracula.nvim' }, -- dracula theme
+  { 'Mofiqul/vscode.nvim' },  -- vscode dark theme
   -- { 'tanvirtin/monokai.nvim' },
   -- kanagawa
   -- { 'rebelot/kanagawa.nvim' },
@@ -1130,6 +1134,3 @@ local filter_notify = function(text, level, opts)
   orig_notify(text, level, opts)
 end
 vim.notify = filter_notify
-
-
-___
