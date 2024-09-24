@@ -1134,3 +1134,16 @@ local filter_notify = function(text, level, opts)
   orig_notify(text, level, opts)
 end
 vim.notify = filter_notify
+
+
+
+-- PLUGINS MANUAL
+
+-- TODO COMMENTS:
+-- FIX = { icon = " ", color = "error"
+-- TODO = { icon = " ", color = "info"
+-- HACK = { icon = " ", color = "warning"
+-- WARN = { icon = "⚠️ ", color = "warning"
+-- PERF = { icon = " ", color = "perf"
+-- NOTE = { icon = "📝 ", color = "hint"
+-- i.e.: -- WARN: this is a note
