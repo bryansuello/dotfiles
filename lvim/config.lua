@@ -189,7 +189,7 @@ linters.setup {
   -- },
 }
 
--- Additional Plugins, OWN INSTALLED
+------------------------- OWN INSTALLED PLUGINS
 lvim.plugins = {
   {
     "folke/trouble.nvim",
@@ -326,12 +326,13 @@ lvim.plugins = {
       })
     end,
   },
-  { 'themaxmarchuk/tailwindcss-colors.nvim' }, --tailwindcss colorizer
-  { 'briancollins/vim-jst' },                  --ejs syntax highlighting: seems to work, syntax but formatting doesn't
+  { 'themaxmarchuk/tailwindcss-colors.nvim' },              --tailwindcss colorizer
+  { 'briancollins/vim-jst' },                               --ejs syntax highlighting: seems to work, syntax but formatting doesn't
+  { 'wakatime/vim-wakatime',                lazy = false }, -- WAKATIME
 
   --COLOR THEMES
-  { 'Mofiqul/dracula.nvim' }, -- dracula theme
-  { 'Mofiqul/vscode.nvim' },  -- vscode dark theme
+  { 'Mofiqul/vscode.nvim' }, -- vscode dark theme
+  -- { 'Mofiqul/dracula.nvim' }, -- dracula theme
   -- { 'tanvirtin/monokai.nvim' },
   -- kanagawa
   -- { 'rebelot/kanagawa.nvim' },
@@ -419,7 +420,7 @@ vim.opt.sidescrolloff = 8
 -- Configuration {{{1
 
 -- Settings {{{2
--- start of COMMENTED section. CUSTOM LUALINE CONFIG
+-- START OF CUSTOM LUALINE CONFIG
 local lineLengthWarning = 80
 local lineLengthError = 120
 lvim.builtin.lualine.sections = {
@@ -444,26 +445,35 @@ lvim.builtin.lualine.inactive_sections = {
 local colors = {
   bg               = '#0f1117',
   modetext         = '#000000',
-  giticonbg        = '#FF8800',
-  gitbg            = '#5C2C2E',
+  giticonbg        = '#1B03A3', -- deep blue
+  gitbg            = '#0AFFEF', -- neon blue
   gittext          = '#C5C5C5',
   diagerror        = '#F44747',
-  diagwarning      = '#FF8800',
-  diaghint         = '#4FC1FF',
+  diagwarning      = '#FF073A', -- neon red
+  -- diaghint         = '#4FC1FF',
+  -- diaghint         = '#0AFFEF',
+  diaghint         = '#FFFFFF',
   diaginfo         = '#FFCC66',
-  lspiconbg        = '#68AF00',
-  lspbg            = '#304B2E',
-  lsptext          = '#C5C5C5',
-  typeiconbg       = '#FF8800',
-  typebg           = '#5C2C2E',
+  lspiconbg        = '#0AFFEF',
+  -- lspiconbg        = '#68AF00',
+  lspbg            = '#1B03A3',
+  -- lspbg            = '#304B2E',
+  lsptext          = '#FFFFFF',
+  typeiconbg       = '#0AFFEF',
+  typebg           = '#1B03A3',
   typetext         = '#C5C5C5',
   typeiconbgrw     = '#229900',
   typetextmodified = '#FF3300',
   typeiconbgro     = '#000000',
   typetextreadonly = '#000000',
-  statsiconbg      = '#9CDCFE',
-  statsbg          = '#5080A0',
-  statstext        = '#000000',
+  statsiconbg      = '#0AFFEF',
+  -- statsiconbg      = '#9CDCFE',
+  -- statsbg          = '#1B03A3',
+  statsbg          = '#9B59B6',
+  -- statsbg          = '#5080A0',
+  -- statstext        = '#FFFFFF',
+  -- statstext        = '#000000',
+  statstext        = '#1B03A3',
   lineokfg         = '#000000',
   lineokbg         = '#5080A0',
   linelongerrorfg  = '#FF0000',
@@ -484,8 +494,8 @@ local colors = {
 }
 
 local mode_map = {
-  ['n']        = { '#569CD6', ' NORMAL ' },
-  ['i']        = { '#D16969', ' INSERT ' },
+  ['n']        = { '#0AFFEF', ' NORMAL ' },
+  ['i']        = { '#9B59B6', ' INSERT ' },
   ['R']        = { '#D16969', 'REPLACE ' },
   ['c']        = { '#608B4E', 'COMMAND ' },
   ['v']        = { '#C586C0', ' VISUAL ' },
@@ -1112,7 +1122,7 @@ ins_right {
   cond = conditions.display_pos,
   padding = { left = 0, right = 1 }
 }
--- END OF COMMENTED SECTION: LUALINE CUSTOM CONFIG
+-- END OF LUALINE CUSTOM CONFIG
 -- }}}2
 
 -- }}}1
@@ -1137,7 +1147,7 @@ vim.notify = filter_notify
 
 
 
--- PLUGINS MANUAL
+------------- PLUGINS MANUAL
 
 -- TODO COMMENTS:
 -- FIX = { icon = " ", color = "error"
@@ -1146,4 +1156,12 @@ vim.notify = filter_notify
 -- WARN = { icon = "⚠️ ", color = "warning"
 -- PERF = { icon = " ", color = "perf"
 -- NOTE = { icon = "📝 ", color = "hint"
+-- i.e.: -- WARN: this is a note
+-- i.e.: -- WARN: this is a note
+-- i.e.: -- WARN: this is a note
+-- i.e.: -- WARN: this is a note
+-- i.e.: -- WARN: this is a note
+-- i.e.: -- WARN: this is a note
+-- i.e.: -- WARN: this is a note
+-- i.e.: -- WARN: this is a note
 -- i.e.: -- WARN: this is a note
