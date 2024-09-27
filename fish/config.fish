@@ -1,6 +1,7 @@
 ##### 9-25-24
 ##### INSTALL
 # install omf, bobthefish as theme
+# which fish -- check fish path
 # chsh -s /usr/bin/fish -- set fish as default
 # echo $SHELL -- check which shell you are using
 
