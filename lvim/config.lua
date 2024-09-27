@@ -189,7 +189,7 @@ linters.setup {
   -- },
 }
 
-------------------------- OWN INSTALLED PLUGINS
+------------------------- USER INSTALLED PLUGINS
 lvim.plugins = {
   {
     "folke/trouble.nvim",
