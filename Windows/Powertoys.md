@@ -1,1 +1,2 @@
 - global search alt + space
+- file explorer add-ons
