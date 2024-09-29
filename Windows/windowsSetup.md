@@ -37,3 +37,4 @@ APPS:
 - vlc media player - as default video viewer
 - hitfilm express - vid editor
 - sticky notes
+- tplink driver
