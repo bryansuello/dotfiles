@@ -1,3 +1,4 @@
+// --- 11-3-24
 {
   "editor.formatOnSave": true,
   "[html]": {
@@ -114,9 +115,9 @@
     // "tab.inactiveBackground": "#252525",
     // "tab.inactiveForeground": "#ffffff",
     // "statusBar.border": "#151515",
-    "statusBar.background": "#151515",
-    "statusBar.foreground": "#0DFF00"
-    // "editor.background": "#151515"
+    "statusBar.background": "#000000",
+    "statusBar.foreground": "#0DFF00",
+    "editor.background": "#000000" //background color, OLED #000000
   },
   "editor.rulers": [
     80
@@ -140,7 +141,7 @@
     "**/bower_components": true,
     "**/*.code-search": true
   },
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
   // "liveServer.settings.NoBrowser": false,
   // "liveServer.settings.AdvanceCustomBrowserCmdLine": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe --private-window",
   // "liveServer.settings.CustomBrowser": "microsoft-edge",
@@ -178,7 +179,6 @@
   },
   "vim.matchpairs": "(:),{:},[:],<:>",
   "security.workspace.trust.untrustedFiles": "open",
-  "workbench.colorTheme": "Dracula At Night",
   "editor.minimap.enabled": false,
   "cSpell.enabledLanguageIds": [
     "asciidoc",
