@@ -1,3 +1,4 @@
+-- 11-3-24
 -- Read the docs: https://www.lunarvim.org/docs/configuration
 -- Example configs: https://github.com/LunarVim/starter.lvim
 -- Video Tutorials: https://www.youtube.com/watch?v=sFA9kX-Ud_c&list=PLhoH5vyxr6QqGu0i7tt_XoVK9v-KvZ3m6
@@ -24,7 +25,7 @@ an executable
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save = true
-lvim.colorscheme = "vscode" --or kanagawa, tokyonight, onedark, gruvbox, monokai, dracula
+lvim.colorscheme = "modus_vivendi" --or kanagawa, tokyonight, onedark, monokai, dracula, vscode, gruvbox
 lvim.transparent_window = true
 -- to disable icons and use a minimalist setup, uncomment the following
 -- lvim.use_icons = false
@@ -36,9 +37,9 @@ lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"
 lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
 
--- OWN KEYMAPS
+------------ OWN KEYMAPS
 vim.keymap.set("i", "kj", "<ESC>", { noremap = true, silent = true })
-lvim.keys.normal_mode["<A-g>"] = ":Telescope live_grep<CR>"
+lvim.keys.normal_mode["<A-x>"] = ":Telescope live_grep<CR>"
 lvim.keys.normal_mode["<A-f>"] = ":Telescope fd<CR>"
 lvim.keys.normal_mode["<F5>"] = ":setlocal spell!<CR>" --toggle spellcheck
 -- vim.keymap.set("n", "<A-1>", ":HopChar1<CR>") -- specified in plugin
@@ -331,7 +332,7 @@ lvim.plugins = {
   { 'wakatime/vim-wakatime',                lazy = false }, -- WAKATIME
 
   --COLOR THEMES
-  { 'Mofiqul/vscode.nvim' }, -- vscode dark theme
+  -- { 'Mofiqul/vscode.nvim' }, -- vscode dark theme
   -- { 'Mofiqul/dracula.nvim' }, -- dracula theme
   -- { 'tanvirtin/monokai.nvim' },
   -- kanagawa
@@ -342,6 +343,7 @@ lvim.plugins = {
   -- {
   --   'ellisonleao/gruvbox.nvim' --more vibrant gruvbox, easier to ur eyes
   -- },
+  { "miikanissi/modus-themes.nvim",         priority = 1000 },
 
 
   -- Autocommands (https://neovim.io/doc/user/autocmd.html)
