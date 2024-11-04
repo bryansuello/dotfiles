@@ -1,4 +1,4 @@
--- 11-3-24, 11-4-24
+-- 11-3-24, 11-4-24, 11-5-24
 -- Read the docs: https://www.lunarvim.org/docs/configuration
 -- Example configs: https://github.com/LunarVim/starter.lvim
 -- Video Tutorials: https://www.youtube.com/watch?v=sFA9kX-Ud_c&list=PLhoH5vyxr6QqGu0i7tt_XoVK9v-KvZ3m6
@@ -9,7 +9,6 @@
 -- Video Tutorials: https://www.youtube.com/watch?v=sFA9kX-Ud_c&list=PLhoH5vyxr6QqGu0i7tt_XoVK9v-KvZ3m6
 -- Forum: https://www.reddit.com/r/lunarvim/
 -- Discord: https://discord.com/invite/Xb9B4Ny
-
 
 
 --[[
@@ -26,7 +25,7 @@ an executable
 lvim.log.level = "warn"
 lvim.format_on_save = true
 lvim.colorscheme =
-"modus_vivendi" --or kanagawa, tokyonight, onedark, monokai, dracula, vscode, gruvbox, modus_vivendi, github_dark, moonfly, everforest
+"tokyonight" --or kanagawa, tokyonight, onedark, monokai, dracula, vscode, gruvbox, modus_vivendi, github_dark, moonfly, everforest
 lvim.transparent_window = true
 -- to disable icons and use a minimalist setup, uncomment the following
 -- lvim.use_icons = false
@@ -87,7 +86,7 @@ lvim.keys.normal_mode["<F5>"] = ":setlocal spell!<CR>" --toggle spellcheck
 -- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
 lvim.builtin.alpha.active = false
 lvim.builtin.alpha.mode = "dashboard"
-lvim.builtin.terminal.active = true
+lvim.builtin.terminal.active = false -- toggleterm
 lvim.builtin.nvimtree.setup.view.side = "left"
 -- lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
 lvim.builtin.nvimtree.setup.renderer.icons.show.git = true
@@ -235,14 +234,14 @@ lvim.plugins = {
   --     vim.cmd("let g:minimap_auto_start_win_enter = 1")
   --   end,
   -- },
-  {
-    'gorbit99/codewindow.nvim', --minimap works (leader - mo-open, mc-close, mf-focus, mm-toggle)
-    config = function()
-      local codewindow = require('codewindow')
-      codewindow.setup()
-      codewindow.apply_default_keybinds()
-    end,
-  },
+  -- {
+  --   'gorbit99/codewindow.nvim', --minimap works (leader - mo-open, mc-close, mf-focus, mm-toggle)
+  --   config = function()
+  --     local codewindow = require('codewindow')
+  --     codewindow.setup()
+  --     codewindow.apply_default_keybinds()
+  --   end,
+  -- },
   {
     "tpope/vim-surround",
     -- make sure to change the value of `timeoutlen` if it's not triggering correctly, see https://github.com/tpope/vim-surround/issues/117
@@ -344,7 +343,7 @@ lvim.plugins = {
   -- {
   --   'ellisonleao/gruvbox.nvim' --more vibrant gruvbox, easier to ur eyes
   -- },
-  { "miikanissi/modus-themes.nvim",         priority = 1000 },
+  -- { "miikanissi/modus-themes.nvim",         priority = 1000 },
   -- {
   --   'projekt0n/github-nvim-theme',
   --   name = 'github-theme',
@@ -475,3 +474,4 @@ vim.notify = filter_notify
 -- i.e.: -- FIX: this is a note
 -- i.e.: -- NOTE: this is a note
 -- i.e.: -- PERF: this is a note
+
