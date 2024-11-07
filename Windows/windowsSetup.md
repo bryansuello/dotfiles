@@ -1,5 +1,5 @@
 - use edge, sync with bwsuello@gmail.com
-
+- startup windows terminal
 - file explorer - hide recent files, most used files, etc
                 - show hidden files
 - taskbar hidden, small icons. Only shows when you hover in the area with a mouse.
@@ -22,9 +22,14 @@ APPS:
 - windows terminal
     - ubuntu
 - devdocs(via edge)
+- chatGPT(edge)
 - duolingo(via edge)
 - spotify(via edge)
+- facebook(edge)
+- discord
+- draw.io
 - postman
+- mongoDB compass
 - winrar
 - anki
 - autohotkey
@@ -38,3 +43,11 @@ APPS:
 - hitfilm express - vid editor
 - sticky notes
 - tplink driver
+- proton vpn
+- powertoys(windows)
+
+DEFAULT APPS:
+  - music player: vlc 
+  - photo viewer: irfranview
+  - video: vlc
+  - browser: edge
