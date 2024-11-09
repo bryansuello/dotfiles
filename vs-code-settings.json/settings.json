@@ -17,20 +17,45 @@
   },
   // VIM
   // "vim.vimrc.path": "/home/daddy/.config/nvim/init.vim",
+  "vim.leader": "<space>",
   "vim.startInInsertMode": false,
   "vim.insertModeKeyBindings": [
     {
-      "before": [
-        "k",
-        "j"
-      ],
-      "after": [
-        "<Esc>"
-      ]
+      "before": ["k", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // file tree
+    {
+      "before": ["leader", "e"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    // split
+    {
+      "before": ["leader", "v"],
+      "commands": [":vsplit"] // open vertical split
+    },
+    // panes
+    {
+      "before": ["leader", "h"],
+      "commands": ["workbench.action.focusLeftGroup"] // leader h to move to left pane
+    },
+    {
+      "before": ["leader", "l"],
+      "commands": ["workbench.action.focusRightGroup"] // leader l to move to right pane
+    },
+    // open file
+    {
+      "before": ["leader", "f"],
+      "commands": ["workbench.action.quickOpen"] // open new file
+    },
+    {
+      "before": ["g", "h"],
+      "commands": ["editor.action.showDefinitionPreviewHover"] // open new file
     }
   ],
   "vim.easymotion": true,
-  "vim.leader": "<space>",
   "editor.cursorBlinking": "phase",
   "editor.tokenColorCustomizations": {
     "comments": "#858585",
@@ -120,11 +145,7 @@
     "editor.background": "#000000" //background color, OLED #000000
   },
   // "editor.rulers": [80],
-  "colorize.languages": [
-    "javascript",
-    "typescript",
-    "php"
-  ], //bring colorize to javascript
+  "colorize.languages": ["javascript", "typescript", "php"], //bring colorize to javascript
   //prettier
   "prettier.singleQuote": true, //singe quotes for javascript files
   "prettier.arrowParens": "avoid",
@@ -220,4 +241,5 @@
   "breadcrumbs.enabled": false
   // "editor.stickyScroll.maxLineCount": 3
 }
+
 // turned off sticky scroll
