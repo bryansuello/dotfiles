@@ -1,4 +1,4 @@
-// --- 11-3-24
+// --- 11-9-24
 {
   "editor.formatOnSave": true,
   "[html]": {
@@ -31,7 +31,7 @@
   ],
   "vim.easymotion": true,
   "vim.leader": "<space>",
-  "editor.cursorBlinking": "solid",
+  "editor.cursorBlinking": "phase",
   "editor.tokenColorCustomizations": {
     "comments": "#858585",
     "textMateRules": [
@@ -80,7 +80,7 @@
   //Date & Time extension end
   "editor.semanticTokenColorCustomizations": {},
   "editor.renderWhitespace": "all",
-  "workbench.sideBar.location": "left",
+  // "workbench.sideBar.location": "left", // left, right
   "zenMode.hideLineNumbers": false,
   "zenMode.hideStatusBar": false,
   "zenMode.centerLayout": false,
@@ -119,9 +119,7 @@
     "statusBar.foreground": "#0DFF00",
     "editor.background": "#000000" //background color, OLED #000000
   },
-  "editor.rulers": [
-    80
-  ],
+  // "editor.rulers": [80],
   "colorize.languages": [
     "javascript",
     "typescript",
@@ -148,7 +146,7 @@
   // "resmon.show.cpuusage": false,
   // "resmon.show.cpufreq": false,
   // "resmon.show.mem": false,
-  "editor.wordWrap": "wordWrapColumn",
+  // "editor.wordWrap": "wordWrapColumn",
   "vim.smartRelativeLine": true,
   "terminal.integrated.defaultProfile.linux": "fish",
   "terminal.integrated.fontSize": 12.5,
@@ -172,7 +170,7 @@
   // },
   // "glassit.alpha": 220,
   // "background.customImages": ["file:///C:/Users/brys/Documents/ahe0.jpg"],
-  "editor.fontSize": 15,
+  "editor.fontSize": 13,
   "workbench.startupEditor": "none",
   "[php]": {
     "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
@@ -187,15 +185,10 @@
     "csharp",
     "css",
     "elixir",
-    "erlang",
     "git-commit",
     "go",
     "graphql",
-    "handlebars",
-    "haskell",
     "html",
-    "jade",
-    "java",
     "javascript",
     "javascriptreact",
     "json",
@@ -209,7 +202,6 @@
     "pug",
     "restructuredtext",
     "rust",
-    "scala",
     "scss",
     "scminput",
     "swift",
@@ -220,8 +212,12 @@
     "yaml",
     "yml"
   ],
-  //"workbench.activityBar.location": "hidden",
-  "workbench.editor.tabActionCloseVisibility": false
+  "workbench.activityBar.location": "hidden", // bar on the left with the file, extension, etc icons
+  "workbench.editor.tabActionCloseVisibility": false,
+  "editor.stickyScroll.maxLineCount": 1,
+  "editor.stickyScroll.scrollWithEditor": false,
+  "breadcrumbs.filePath": "off",
+  "breadcrumbs.enabled": false
   // "editor.stickyScroll.maxLineCount": 3
 }
 // turned off sticky scroll
