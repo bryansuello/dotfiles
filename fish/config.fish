@@ -1,4 +1,4 @@
--##### 9-25-24, 11-3-24
+-##### 9-25-24, 11-3-24, 11-18-24
 -##### INSTALL
 -# install omf, bobthefish as theme
 -# which fish -- check fish path
@@ -33,7 +33,7 @@ alias 1="cd ~/Dev/"
 # desktop(ubuntu)
 # alias 1="cd ~/Documents/dev/"
 alias 2="cd ~/.config/"
-alias 3="cd /mnt/c/Documents\ and\ Settings/Brys/Documents/Obsidian_Win"
+alias 3="cd /mnt/c/Users/Brys/Documents/Obsidian2/"
 # alias downloads="cd ~/Downloads/"
 # alias documents="cd ~/Documents/"
 #alias obsidian="cd /mnt/c/Obsidian_Win/"
