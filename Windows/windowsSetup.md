@@ -21,6 +21,8 @@ APPS:
 - illustrator
 - windows terminal
     - ubuntu
+- obsidian
+- virtualbox/vmware
 - devdocs(via edge)
 - chatGPT(edge)
 - duolingo(via edge)
