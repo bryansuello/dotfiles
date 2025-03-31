@@ -22,7 +22,7 @@ APPS:
 - windows terminal
     - ubuntu
 - obsidian
-- virtualbox/vmware
+- vmware - for kali virtual machine
 - devdocs(via edge)
 - chatGPT(edge)
 - duolingo(via edge)

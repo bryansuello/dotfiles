@@ -10,7 +10,7 @@
     "key": "f1",
     "command": "workbench.action.terminal.focusNext",
     "when": "!terminalFocus"
-  }
+  },
   {
     // use ctrl % to jump to closing tag in vs code vim, bec % simply dont work on html tags
     "key": "ctrl+shift+5",
