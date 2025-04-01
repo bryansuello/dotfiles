@@ -1,0 +1,37 @@
+{
+  "_id": "65194a8fbc3f12a7c9e3b001",
+  "flightNumber": "AF123",
+  "origin": "Paris",
+  "destination": "New York",
+  "departureDate": "2024-10-05T10:30:00Z",
+  "arrivalDate": "2024-10-05T16:45:00Z",
+  "price": 850.75,
+  "slots": 120,
+  "isActive": true
+}
+
+
+{
+  "_id": "65194a9fcb6d23b8d1f5b002",
+  "flightNumber": "AZ456",
+  "origin": "Rome",
+  "destination": "Tokyo",
+  "departureDate": "2024-11-01T13:00:00Z",
+  "arrivalDate": "2024-11-02T07:00:00Z",
+  "price": 1200.50,
+  "slots": 200,
+  "isActive": true
+}
+
+
+{
+  "_id": "65194ab6df5e34c9e2a6b003",
+  "flightNumber": "IB789",
+  "origin": "Madrid",
+  "destination": "Buenos Aires",
+  "departureDate": "2024-12-10T21:00:00Z",
+  "arrivalDate": "2024-12-11T06:30:00Z",
+  "price": 980.00,
+  "slots": 150,
+  "isActive": false
+}

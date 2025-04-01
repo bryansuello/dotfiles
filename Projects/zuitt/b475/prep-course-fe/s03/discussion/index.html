@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HTML Form and Semantic HTML</title>
+</head>
+
+<body>
+    <!-- Semantic container tag -->
+    <header>
+        <h2>Semantic HTML</h2>
+        <p>Semantic HTML tags that indicate what it is for and what it contains.</p>
+    </header>
+
+    <!-- main is the container where the main content of the page goes -->
+    <main>
+        <!-- section tags are containers used to contain similarly themed content. -->
+        <section>
+            <h2>HTML Forms</h2>
+            <!-- i tag adds emphasis on our text element. i tag is an example of non-semantic HTML -->
+            <p><i>HTML elements that make up a form.</i></p>
+
+
+            <!-- we are going to add a form element -->
+            <!-- form tag creates an HTML for to capture user input -->
+            <form>
+                <!-- create a label and input field -->
+                <label for="fullName">Full Name: </label><br />
+                <!-- type attribute will define what type of information the input field should have -->
+                <!-- name attribute will provide input field with a name that we can use to associate with the information provided by our user -->
+                <!-- required will not allow the form to be submitted without any user input -->
+                <!-- autocomplete attribute will provide suggestions without any user input -->
+                <input type="text" name="fullName" required autocomplete="on">
+                <br />
+
+                <label for="birthDate"></label>
+                <input type="date" name="birthDate" id="birthDate" required>
+                <br>
+
+                <!-- input field for number -->
+                <label for="age"></label>
+                <input type="" name="age" id="age" required>
+                <br>
+
+                <label for="notes"></label>
+                <!-- textarea - creates a large text input that can be used for capturing longer texts -->
+                <textarea name="notes" id="notes"></textarea>
+
+                <button>Submit</button>
+                <!-- rest button -->
+                <!-- this button will reset form data -->
+                <button type="reset">Reset</button>
+            </form>
+
+        </section>
+    </main>
+</body>
+
+</html>

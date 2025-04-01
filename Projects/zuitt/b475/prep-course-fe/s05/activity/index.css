@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav {
+  text-align: center;
+  padding: 10px;
+  background-color: #add8e6;
+}
+
+#landing {
+  padding: 50px;
+  background-color: #add8e6;
+  font-size: 2em;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.1em;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+h3 {
+  font-size: 0.8em;
+}
+
+#movies {
+  text-align: center;
+  padding: 2%;
+  margin: 3%;
+}
+
+.card {
+  padding: 20px;
+  text-align: center;
+  display: inline-block;
+}
+
+.card-img {
+  height: 300px;
+  width: 300px;
+  border-radius: 5%;
+}
+
+#contact {
+  background-color: #add8e6;
+  text-align: center;
+  padding: 8px;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}

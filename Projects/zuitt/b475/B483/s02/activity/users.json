@@ -1,0 +1,32 @@
+[
+  {
+    "_id": "5f47ac29e6f1d2bff81f9e13",
+    "firstName": "Élodie",
+    "lastName": "Beaumont",
+    "email": "elodiebeaumont@mail.com",
+    "password": "elodieamazing",
+    "isAdmin": false,
+    "mobileNumber": "0923456321",
+    "countryOfOrigin": "France"
+  },
+  {
+    "_id": "6519485fb0f4a3e74d9c8e01",
+    "firstName": "Luca",
+    "lastName": "Moretti",
+    "email": "lucamoretti@mail.com",
+    "password": "lucanyoudoit",
+    "isAdmin": true,
+    "mobileNumber": "0903456123",
+    "countryOfOrigin": "Italy"
+  },
+  {
+    "_id": "6519492eb5c4a7f9e8dce234",
+    "firstName": "Santiago",
+    "lastName": "Cruz",
+    "email": "santiagocruz@mail.com",
+    "password": "cuzsantiago",
+    "isAdmin": true,
+    "mobileNumber": "0903456012",
+    "countryOfOrigin": "Spain"
+  }
+]

@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+nav {
+  /* padding: 8px; */
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  margin: 5px;
+}
+
+#landing {
+  /* padding-left: 300px;
+  padding-right: 300px;
+  padding-top: 32px;
+  padding-bottom: 32px; */
+  padding: 32px 300px;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.header {
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+#apply {
+  color: white;
+  background-color: slategray;
+  padding: 8px;
+  font-size: 16px;
+  margin-top: 16px;
+}
+
+#mission {
+  padding: 32px 15px;
+}
+
+.card {
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+  margin-right: 2px;
+}

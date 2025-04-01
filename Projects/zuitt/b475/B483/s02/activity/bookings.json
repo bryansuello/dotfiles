@@ -1,0 +1,20 @@
+[
+  {
+    "_id": "651949a5d2f3e8b9a3e6a001",
+    "userId": "5f47ac29e6f1d2bff81f9e13",
+    "flightId": "6519485fb0f4a3e74d9c8e01",
+    "status": "confirmed"
+  },
+  {
+    "_id": "651949b2d2f3e8b9a3e6a002",
+    "userId": "6519485fb0f4a3e74d9c8e01",
+    "flightId": "6519492eb5c4a7f9e8dce234",
+    "status": "pending"
+  },
+  {
+    "_id": "651949c3d2f3e8b9a3e6a003",
+    "userId": "6519492eb5c4a7f9e8dce234",
+    "flightId": "5f47ac29e6f1d2bff81f9e13",
+    "status": "canceled"
+  }
+]

@@ -1,0 +1,8 @@
+Bryan Suello
+nickname: Brys
+
+Expectations:
+I expect the bootcamp to be fast-paced, with new coding concepts introduced daily. I’ll be doing a lot of hands-on exercises and projects to practice what I learn. Collaboration with peers will be key, as I’ll work on group projects and discussions. I anticipate receiving regular feedback from instructors to help me improve. Finally, I understand that the program will require a full-time commitment, including work beyond the scheduled hours.
+
+Aspirations:
+After completing the bootcamp, I aspire to apply my newly gained skills in real-world projects, either as a full-time developer or in freelance work. I hope to deepen my knowledge in specific areas like front-end or back-end development and continue expanding my skill set. Ultimately, I want to build a portfolio that showcases my abilities and contribute to innovative projects. My goal is to confidently enter the tech industry and continue growing as a developer.

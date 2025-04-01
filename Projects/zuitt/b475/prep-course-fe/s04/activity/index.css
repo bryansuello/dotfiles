@@ -1,0 +1,51 @@
+* {
+  font-family: 'Consolas', sans-serif;
+}
+
+div {
+  background-color: #4d4dff;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Verdana', sans-serif;
+}
+
+nav {
+  padding: 8px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#landing {
+  text-align: center;
+}
+
+#profile {
+  height: 300px;
+  width: 300px;
+  border-radius: 30%;
+}
+
+#artist {
+  text-align: center;
+  margin: 60px;
+}
+
+#songs {
+  text-align: center;
+  margin: 60px;
+}
+
+footer {
+  text-align: center;
+  padding: 8px;
+  background-color: blueviolet;
+}
